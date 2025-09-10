@@ -23,7 +23,31 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+reporter: [
+    // 1. 'list' reporter for detailed terminal output.
+    ['list'],
+ 
+    // 2. HTML reporter to generate a self-contained report.
+    ['html', {
+      outputFolder: 'playwright-report',
+      open: 'always'
+    }],
+ 
+    // 3. JSON reporter for programmatic processing.
+    ['json', {
+      outputFile: 'test-results/json-report.json'
+    }],
+ 
+    // 4. JUnit reporter for CI systems like Jenkins.
+    ['junit', {
+      outputFile: 'test-results/junit-report.xml'
+    }],
+ 
+    // 5. Allure reporter for rich, interactive reports.
+    ['allure-playwright', {
+      outputFolder: 'allure-results'
+    }]
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
