@@ -1,0 +1,20 @@
+Sorted by Price Low to High: [ 7.99, 9.99, 15.99, 15.99, 29.99, 49.99 ]
+Sorted by Price High to Low: [ 49.99, 29.99, 15.99, 15.99, 9.99, 7.99 ]
+Sorted by Name A to Z: [
+  'Sauce Labs Backpack',
+  'Sauce Labs Bike Light',
+  'Sauce Labs Bolt T-Shirt',
+  'Sauce Labs Fleece Jacket',
+  'Sauce Labs Onesie',
+  'Test.allTheThings() T-Shirt (Red)'
+]
+Sorted by Name Z to A: [
+  'Test.allTheThings() T-Shirt (Red)',
+  'Sauce Labs Onesie',
+  'Sauce Labs Fleece Jacket',
+  'Sauce Labs Bolt T-Shirt',
+  'Sauce Labs Bike Light',
+  'Sauce Labs Backpack'
+]
+Items in cart: [ 'Sauce Labs Backpack', 'Sauce Labs Bike Light' ]
+Order confirmation verified successfully.
